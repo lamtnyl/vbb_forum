@@ -1,0 +1,94 @@
+﻿<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Làm web tặng người thân bạn nhé</title>
+<script language=javascript src="includes/js/checkinput.js"></script>
+<script language=Javascript src="includes/js/viettyping.js"></SCRIPT>
+<style type=text/css>
+.left_text{
+	width:100px;
+	float:left;
+}
+.right_form{
+	width:350px;
+	float:left;
+}
+.color{
+	width:15px;
+	height:15px;
+	float:left;
+}
+.full_width{
+	width:100%;
+	float:left;
+}
+#form_wrapper{
+	width:500px;
+	padding-left:50px;
+}
+</style>
+</head>
+
+<body>
+<form name="frmInput" method="POST" action="progress.php" onSubmit="return check();">
+<div id='form_wrapper'>
+	<div class="full_width">
+    <img src="images/matcuoi.gif" border="0">
+    <b>Tạo web tặng bạn bè</b>
+    <img src="images/matcuoi.gif" border="0">
+    </div>
+    <div class="full_width">    
+    </div>
+    
+	<div class="left_text">Tên bạn:</div>
+    <div class="right_form">
+    <input name="username" type="text" id="name" onMouseDown="value=''" style="width: 245px" />
+    </div>
+    
+    <div class="left_text">Gửi tặng:</div>
+    <div class="right_form">
+      <input type="text" name="sendto" id="to" onMouseDown="value=''" size="20" style="width: 245px" />
+    </div>
+    
+    <div class="left_text">Chữ chạy:</div>
+    <div class="right_form">
+      <input name="scrolltext" type="text" id="chu chay" onFocus="value=''" onMouseDown="value=''" value="Dòng chữ chạy đầu trang web" style="width: 246px" />
+    </div>
+    
+    <div class="left_text">Chọn theme:</div>
+    <div class="right_form">
+    <input name="theme" type="text" id="theme" onMouseDown='javascript: alert("Kích vào link bên cạnh để chọn theme");'  onKeyDown='javascript: alert("Kích vào link bên cạnh để chọn theme");'  style="width: 110; height:20" /><a target="_blank" href='theme.php'><b>Chọn theme tại đây</b></a>
+    </div>
+    
+    <div class="left_text">Màu chữ:</div>
+    <div class="right_form">    
+    <select name="color">
+      <option value="#000000">Đen</option>
+      <option value="#FF0000">Đỏ</option>
+      <option value="#0043C9">Xanh đậm</option>
+      <option value="#33CC33" selected>Xanh lá cây</option>
+      <option value="#FFFF00">Vàng</option>
+      <option value="#CC00CC">Tím</option>
+      <option value="#66FFFF">Xanh da trời</option>
+    </select>
+    </div> 
+
+    <div class="full_width">Nội dung:</div>
+    <div class="full_width"><textarea name="content" id="content" rows="8" cols="39"></textarea></div>
+    
+    <div class="full_width">
+    <a target='_blank' href='icon.php'>
+    <img src="images/icon.gif" border=0>
+	<b>Kích vào đây chọn mặt cười</b>
+	</a>
+	</div>
+    <div class="full_width">
+    <input type="submit" name="I1" value="Tôi đã viết xong">
+    </div>
+	
+</div>
+</form>
+
+</body>
+</html>

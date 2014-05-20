@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<navgroups product="vbulletin">
+
+	
+	<navgroup text="Fun Shop" displayorder="1">
+
+		<navoption displayorder="8">
+			<text>Settings</text>
+			<link>fshop_settings.php</link>
+		</navoption>
+        	<navoption displayorder="9">
+			<text>Create Items</text>
+			<link>fshop_items.php</link>
+		</navoption>
+       		<navoption displayorder="10">
+			<text>View Using</text>
+			<link>fshop_view.php</link>
+		</navoption>
+		<navoption displayorder="11">
+			<text>Reset</text>
+			<link>fshop_reset.php</link>
+		</navoption>
+    
+    	<navoption displayorder="12">
+			<text>Event Settings</text>
+			<link>fshop_eventsetting.php</link>
+		</navoption>
+        
+        <navoption displayorder="13">
+			<text>Event Manager</text>
+			<link>fshop_eventmanager.php</link>
+		</navoption>
+        
+         <navoption displayorder="14">
+			<text>Event Items</text>
+			<link>fshop_eventitemmanager.php</link>
+		</navoption>
+
+	</navgroup>
+
+
+</navgroups>

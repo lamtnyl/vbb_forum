@@ -1,0 +1,161 @@
+body
+{
+	font: 10pt verdana, geneva, lucida, 'lucida grande', arial, helvetica, sans-serif;
+	margin: 0px;
+	padding: 0px;
+}
+a:link, body_alink{	color: #0560a6;	text-decoration: none;}a:visited, body_avisited{	color: #0560a6;	text-decoration: none;}a:hover, a:active, body_ahover{	color: #FF6633;	text-decoration: none;}
+.smallfont
+{
+	font: 9px verdana, geneva, lucida, 'lucida grande', arial, helvetica, sans-serif;
+}
+.time
+{
+	color: #666686;
+}
+.alt
+{
+	background: #ffffff;
+	font: 10pt verdana, geneva, lucida, 'lucida grande', arial, helvetica, sans-serif;
+}
+.tborder
+{
+	background: #D1D1E1;
+	color: #000000;
+	border: 1px solid #0B198C;
+}
+.alt1, .alt1Active
+{
+	background: #F5F5FF;
+	color: #000000;
+}
+.alt2, .alt2Active
+{
+	background: #E1E4F2;
+	color: #000000;
+}
+
+.button
+{
+}
+.bginput
+{
+}
+/* ***** SHADOW NICKNAME iTeen ***** */
+.glow_CC99FF {
+font-weight:bold;
+text-shadow: 0 0 0.2em #CC99FF, 0 0 0.2em #CC99FF, 0 0 0.2em #CC99FF;
+}
+.glow_FFD700 {
+font-weight:bold;
+text-shadow: 0 0 0.2em #808080, 0 0 0.2em #808080, 0 0 0.2em #808080;
+}
+.glow_FF919F {
+font-weight:bold;
+text-shadow: 0 0 0.2em #FF919F, 0 0 0.2em #FF919F, 0 0 0.2em #FF919F;
+}
+.glow_F660AB {
+font-weight:bold;
+text-shadow: 0 0 0.2em #808080, 0 0 0.2em #808080, 0 0 0.2em #808080;
+}
+.glow_808080 {
+font-weight:bold;
+text-shadow: 0 0 0.2em #808080, 0 0 0.2em #808080, 0 0 0.2em #808080;
+}
+.glow_A9A9A9 {
+font-weight:bold;
+text-shadow: 0 0 0.2em #808080, 0 0 0.2em #808080, 0 0 0.2em #808080;
+}
+.glow_D3D3D3 {
+font-weight:bold;
+text-shadow: 0 0 0.2em #D3D3D3, 0 0 0.2em #D3D3D3, 0 0 0.2em #D3D3D3;
+}
+.glow_FFFFFF {
+font-weight:bold;
+text-shadow: 0 0 0.2em #FFFFFF, 0 0 0.2em #FFFFFF, 0 0 0.2em #FFFFFF;
+}
+.glow_7FFFD4 {
+font-weight:bold;
+text-shadow: 0 0 0.2em #7FFFD4, 0 0 0.2em #7FFFD4, 0 0 0.2em #7FFFD4;
+}
+.glow_00868B {
+font-weight:bold;
+text-shadow: 0 0 0.2em #00868B, 0 0 0.2em #00868B, 0 0 0.2em #00868B;
+}
+.glow_0000FF {
+font-weight:bold;
+text-shadow: 0 0 0.2em #0000FF, 0 0 0.2em #0000FF, 0 0 0.2em #0000FF;
+}
+.glow_000080 {
+font-weight:bold;
+text-shadow: 0 0 0.2em #000080, 0 0 0.2em #000080, 0 0 0.2em #000080;
+}
+.glow_9400D3 {
+font-weight:bold;
+text-shadow: 0 0 0.2em #9400D3, 0 0 0.2em #9400D3, 0 0 0.2em #9400D3;
+}
+.glow_800080 {
+font-weight:bold;
+text-shadow: 0 0 0.2em #800080, 0 0 0.2em #800080, 0 0 0.2em #800080;
+}
+.glow_FF1493 {
+font-weight:bold;
+text-shadow: 0 0 0.2em #FF1493, 0 0 0.2em #FF1493, 0 0 0.2em #FF1493;
+}
+.glow_EE82EE {
+font-weight:bold;
+text-shadow: 0 0 0.2em #EE82EE, 0 0 0.2em #EE82EE, 0 0 0.2em #EE82EE;
+}
+.glow_FFC0CB {
+font-weight:bold;
+text-shadow: 0 0 0.2em #FFC0CB, 0 0 0.2em #FFC0CB, 0 0 0.2em #FFC0CB;
+}
+.glow_006400 {
+font-weight:bold;
+text-shadow: 0 0 0.2em #006400, 0 0 0.2em #006400, 0 0 0.2em #006400;
+}
+.glow_008000 {
+font-weight:bold;
+text-shadow: 0 0 0.2em #008000, 0 0 0.2em #008000, 0 0 0.2em #008000;
+}
+.glow_9ACD32 {
+font-weight:bold;
+text-shadow: 0 0 0.2em #9ACD32, 0 0 0.2em #9ACD32, 0 0 0.2em #9ACD32;
+}
+.glow_FFFF00 {
+font-weight:bold;
+text-shadow: 0 0 0.2em #FFFF00, 0 0 0.2em #FFFF00, 0 0 0.2em #FFFF00;
+}
+.glow_FFA500 {
+font-weight:bold;
+text-shadow: 0 0 0.2em #FFA500, 0 0 0.2em #FFA500, 0 0 0.2em #FFA500;
+}
+.glow_FF0000 {
+font-weight:bold;
+text-shadow: 0px 0px 6px rgb(254, 5, 11), 0px 0px 5px rgb(254, 5, 11), 0px 0px 5px rgb(254, 5, 11);
+}
+.glow_8B0000 {
+font-weight:bold;
+text-shadow: 0 0 0.2em #8B0000, 0 0 0.2em #8B0000, 0 0 0.2em #8B0000;
+}
+.glow_A52A2A {
+font-weight:bold;
+text-shadow: 0 0 0.2em #A52A2A, 0 0 0.2em #A52A2A, 0 0 0.2em #A52A2A;
+}
+.glow_855E42 {
+font-weight:bold;
+text-shadow: 0 0 0.2em #855E42, 0 0 0.2em #855E42, 0 0 0.2em #855E42;
+}
+.glow_DEB887 {
+font-weight:bold;
+text-shadow: 0 0 0.2em #DEB887, 0 0 0.2em #DEB887, 0 0 0.2em #DEB887;
+}
+.glow_F5F5DC {
+font-weight:bold;
+text-shadow: 0 0 0.2em #F5F5DC, 0 0 0.2em #F5F5DC, 0 0 0.2em #F5F5DC;
+}
+.highslide img {
+max-width: 150px;
+height: auto;
+width: expression(this.width > 150 ? 150: true);
+}

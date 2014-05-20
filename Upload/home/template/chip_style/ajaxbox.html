@@ -1,0 +1,23 @@
+<!-- BEGIN: main -->
+    <!-- BEGIN: tieu_diem -->
+    <div class="tieudiem">
+        <div class="title_quote">
+            <h3><a {TARGET} title="{TIEUDIEM.TITLE_ASCII}" href="{TIEUDIEM.LINK}">{TIEUDIEM.TITLE}</a></h3>
+            <p>{TIEUDIEM.INTRO}</p>
+        </div>
+    
+        <div class="thumbs">
+            <a {TARGET} title="{TIEUDIEM.TITLE_ASCII}" href="{TIEUDIEM.LINK}"><img src="{TIEUDIEM.IMG}" class="img_thumbs" border="0" width="110" height="85" /></a>
+        </div>
+</div><!--/.tieudiem-->
+<!-- END: tieu_diem -->
+    <div class="clear"></div>
+    <div class="listxemthem">
+        <ul>
+            <!-- BEGIN: list_bai_moi -->
+            <li><a title="{LIST.TITLE_FULL}" {TARGET} href="{LIST.LINK}">{LIST.TITLE}</a> <span>({LIST.VIEWS})</span></li>    
+            <!-- END: list_bai_moi -->
+        </ul>
+        <div class="viewbox"><a {TARGET} href="{LINK_BOX}">Xem thêm...!</a></div>
+    </div><!--/.listxemthem-->
+<!-- END: main -->                    
