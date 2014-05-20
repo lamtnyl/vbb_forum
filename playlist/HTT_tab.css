@@ -1,0 +1,184 @@
+/* ######### CSS for Shade Tabs. Remove if not using ######### */
+
+.HTT_NTNonline_tab .shadetabs{
+padding: 3px 0;
+margin-left: 0;
+margin-top: 1px;
+margin-bottom: 0;
+font: bold 12px Verdana;
+list-style-type: none;
+text-align: left; /*set to left, center, or right to align the menu as desired*/
+}
+
+.HTT_NTNonline_tab .shadetabs li{
+display: inline;
+margin: 0;
+height:47px;
+}
+
+.HTT_NTNonline_tab .shadetabs li a{
+text-decoration: none;
+position: relative;
+z-index: 1;
+padding: 3px 7px;
+margin-right: 3px;
+color: #737373;
+height:64px;
+}
+
+.HTT_NTNonline_tab .shadetabs li a:visited{
+color: #737373;
+}
+
+.HTT_NTNonline_tab .shadetabs li a:hover{
+text-decoration:none;
+color: green;
+}
+
+.HTT_NTNonline_tab .shadetabs li a.selected{ /*selected main tab style */
+position: relative;
+color:blueviolet;
+top: 0px;
+font-size:13px;
+}
+
+.HTT_NTNonline_tab .shadetabs li a.selected{ /*selected main tab style */
+background-image: url(shadeactive.gif);
+border-bottom-color: white;
+}
+
+.HTT_NTNonline_tab .shadetabs li a.selected:hover{ /*selected main tab style */
+text-decoration: none;
+}
+
+.HTT_NTNonline_tab .tabcontent{
+display:none;
+}
+
+@media print {
+.HTT_NTNonline_tab .tabcontent {
+display:block !important;
+}
+}
+
+/* ######### CSS for Inverted Modern Bricks II Tabs. Remove if not using ######### */
+
+.HTT_NTNonline_tab .modernbricksmenu2{
+padding: 0;
+width: 362px;
+border-top: 5px solid #D25A0B; /*Brown color theme*/ 
+background: transparent;
+voice-family: "\"}\"";
+voice-family: inherit;
+}
+
+.HTT_NTNonline_tab .modernbricksmenu2 ul{
+margin:0;
+margin-left: 10px; /*margin between first menu item and left browser edge*/
+padding: 0;
+list-style: none;
+}
+
+.HTT_NTNonline_tab .modernbricksmenu2 li{
+display: inline;
+margin: 0 2px 0 0;
+padding: 0;
+text-transform:uppercase;
+}
+
+.HTT_NTNonline_tab .modernbricksmenu2 a{
+float: left;
+display: block;
+font: bold 11px Arial;
+color: white;
+text-decoration: none;
+margin: 0 1px 0 0; /*Margin between each menu item*/
+padding: 5px 10px;
+background-color: black; /*Brown color theme*/ 
+border-top: 1px solid white;
+}
+
+.HTT_NTNonline_tab .modernbricksmenu2 a:hover{
+background-color: #D25A0B; /*Brown color theme*/ 
+color: white;
+}
+
+.HTT_NTNonline_tab .modernbricksmenu2 a.selected{ /*currently selected tab*/
+background-color: #D25A0B; /*Brown color theme*/ 
+color: white;
+border-color: #D25A0B; /*Brown color theme*/ 
+}
+
+.HTT_NTNonline_tab .tabcontent{
+display:none;
+}
+
+@media print {
+.HTT_NTNonline_tab .tabcontent {
+display:block !important;
+}
+}
+
+/* ######### CSS for Indented CSS Tabs. Remove if not using ######### */
+
+
+.HTT_NTNonline_tab .indentmenu{
+font: bold 13px Arial;
+width: 100%; /*leave this value as is in most cases*/
+}
+
+.HTT_NTNonline_tab .indentmenu ul{
+margin: 0;
+padding: 0;
+float: left;
+/* width: 80%; width of menu*/
+border-top: 1px solid navy; /*navy border*/
+background: black url(indentbg.gif) center center repeat-x;
+}
+
+.HTT_NTNonline_tab .indentmenu ul li{
+display: inline;
+}
+
+.HTT_NTNonline_tab .indentmenu ul li a{
+float: left;
+color: white; /*text color*/
+padding: 5px 11px;
+text-decoration: none;
+border-right: 1px solid navy; /*navy divider between menu items*/
+}
+
+.HTT_NTNonline_tab .indentmenu ul li a:visited{
+color: white;
+}
+
+.HTT_NTNonline_tab .indentmenu ul li a.selected{
+color: white !important;
+padding-top: 6px; /*shift text down 1px*/
+padding-bottom: 4px;
+background: black url(indentbg2.gif) center center repeat-x;
+}
+
+
+.HTT_NTNonline_tab .tabcontentstyle{ /*style of tab content oontainer*/
+border: 1px solid gray;
+width: 450px;
+margin-bottom: 1em;
+padding: 10px;
+}
+
+.HTT_NTNonline_tab .tabcontent{
+display:none;
+}
+.HTT_NTNonline_tab .tabcontent a{
+color:#3c3c3c;text-decoration:none;
+}
+.HTT_NTNonline_tab .tabcontent a:hover{
+color:blueviolet;text-decoration:none;font-weight:bold;
+}
+
+@media print {
+.HTT_NTNonline_tab .tabcontent {
+display:block !important;
+}
+}

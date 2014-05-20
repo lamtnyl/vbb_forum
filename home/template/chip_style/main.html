@@ -1,0 +1,412 @@
+﻿<!-- BEGIN: main -->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"><head>
+<meta content="{VBHOME_VERSION}" name="generator">
+<title>{WEB_TITLE}</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="keywords" content="{KEYWORDS}">
+<meta name="description" content="{DESCRIPTION}">
+<link rel="stylesheet" href="{TPL_FOLDER}style.css" type="text/css">
+<link rel="stylesheet" href="js/dropdown-menu.css" type="text/css" media="screen" title="default">
+<link rel="shortcut icon" href="hinh03.png" />
+<script type="text/javascript" src="js/jquery-1.2.6.min.js"></script>
+<script type="text/javascript">jQuery.noConflict();</script>
+<script type="text/javascript" src="js/jquery.idTabs.min.js"></script>
+<script type="text/javascript" src="js/dropdown-menu.js"></script>
+<script type="text/javascript" src="js/ajax.js"></script>
+
+
+<body>
+
+<div id="wrapper">
+	<div id="banner"></div>
+    <div id="nav">
+    	<ul>
+        	<li><a href="#">Trang chủ</a></li>
+            <li><a href="{URL_FORUM}forum"  target="_blank">Diễn đàn</a></li>
+            <li><a href="{URL_FORUM}memberlist.php" target="_blank">Thành viên</a></li>
+            <li><a href="{URL_FORUM}Tivi" target="_blank">Tivi Online</a></li>
+            <li><a href="{URL_FORUM}web" target="_blank">Tạo Web</a></li>
+            <li><a href="{URL_FORUM}fshop.php" target="_blank">Fun Shop</a></li>
+            <li><a href="{URL_FORUM}nhac.html" target="_blank">Nghe nhạc</a></li>
+            <li><a href="{URL_FORUM}photoshoponline.html">Photoshop online</a></li>
+            
+        </ul>
+    </div><!--/#nav-->
+     <div class="clear"></div>
+     
+{ADS_CODE1}
+     
+<div id="main_l">    
+    
+    <div id="ann_t">
+    	<div id="login">
+<!-- BEGIN: not_login -->        
+<form action="{URL_FORUM}/login.php" method="post">
+<label style="padding-left:20px;">Tên đăng nhập</label>
+<input type="text" style="font-size: 11px; padding-bottom:3px;" name="vb_login_username" size="17" accesskey="u" tabindex="101" value="Tên đăng nhập" onFocus="if (this.value == 'Tên đăng nhập') this.value = '';">
+Mật mã <input type="password" style="font-size: 11px; padding-bottom:3px;" name="vb_login_password" size="17" accesskey="p" tabindex="102">
+<input type="submit" class="nut_login" value="Ðăng Nhập" tabindex="104" title="Nhập tên đăng nhập và mật khẩu của bạn trong các ô được cung cấp để đăng nhập, hoặc nhấp vào 'đăng ký' để tạo ra một tài khoản mới cho mình." accesskey="s">
+<a {TARGET} href={URL_FORUM}/register.php?>Đăng kí</a> | <a {TARGET} href={URL_FORUM}/login.php?do=lostpw>Quên mật khẩu</a>
+<input type="hidden" name="s" value="">
+<input type="hidden" name="do" value="login">
+</form>
+<!-- END: not_login -->
+<!-- BEGIN: login_done -->
+<div id="login_done">
+Xin chào <a title="Vào trang nhà" {TARGET} href="{USER.PROFILE_URL}">{USER.USERNAME}</a> vừa ghé thăm hôm nay lúc <span class="time">{USER.LASTVISIT}</span> | <a title="Thoát" href="{USER.LOGOUT_URL}">Thoát</a>
+</div>
+<!-- END: login_done -->
+
+</div>
+
+
+
+    </div><!--/#ann_t-->
+    <div id="ann_c">{THONG_BAO}</div><!--/#ann_c-->
+    <div id="ann_f"></div>
+    
+
+ <div id="xem_tivi"></div>
+ <!-- BEGIN: tophot -->
+    <div id="tophot">
+    	Đăng kí làm thành viên của Dongnai24h.vn để cùng tham gia thảo luận, vui chơi, kết bạn với mọi người nào!
+		<div id="tophot_l">
+     		
+            <h1><a {TARGET} href="{TIN.LINK_1}">{TIN.TITLE_1}</a></h1>
+            <p><a title="{TIN.TITLE_1}" {TARGET} href="{TIN.LINK_1}">
+<img class="img_top_1" src="{TIN.IMG_1}" border="0"></a></p>
+            <p>{TIN.INTRO_1}</p>
+        </div>
+
+<!--/#tophot_l-->
+        
+        <div id="tophot_r">
+        	<ul>
+            	
+            	<li>
+                	<h2><a {TARGET} href="{TIN.LINK_2}">{TIN.TITLE_2}</a></h2>
+                	<a title="{TIN.TITLE_2}"{TARGET} href="{TIN.LINK_2}">
+					<img src="{TIN.IMG_2}" width="110"border="0" height="76" class="img_thumbs"></a>
+                </li>
+                
+            	<li>
+                	<h2><a {TARGET} href="{TIN.LINK_3}">{TIN.TITLE_3}</a></h2>
+                	<a title="{TIN.TITLE_3}"{TARGET} href="{TIN.LINK_3}">
+					<img src="{TIN.IMG_3}" width="110"border="0" height="76" class="img_thumbs"></a>
+                </li>
+               
+            	<li>
+                	<h2><a {TARGET} href="{TIN.LINK_4}">{TIN.TITLE_4}</a></h2>
+                	<a title="{TIN.TITLE_4}"{TARGET} href="{TIN.LINK_4}">
+					<img src="{TIN.IMG_4}" width="110"border="0" height="76" class="img_thumbs"></a>
+                </li>
+              
+            	<li>
+                	<h2><a {TARGET} href="{TIN.LINK_5}">{TIN.TITLE_5}</a></h2>
+                	<a title="{TIN.TITLE_5}"{TARGET} href="{TIN.LINK_5}">
+					<img src="{TIN.IMG_5}" width="110"border="0" height="76" class="img_thumbs"></a>
+                </li>
+               
+                
+            </ul>
+        </div><!--/#tophot_r-->
+
+    </div><!--/#tophot-->
+   <!-- END: tophot -->
+    
+    <div class="clear"></div>
+    <div>{ADS_CODE2}</div>
+    <div class="clear"></div>
+    
+    
+    	<!-- BEGIN: box_trai -->
+        <div id="box_left">
+        			<!-- BEGIN: box_nho -->
+                    <div class="box_t{TCAT.NAME}">
+                    	<ul>
+                            <!-- BEGIN: tab_box_nho -->
+                            <li><a title="Xem {BOX.NAME}" onclick="ajax_load('?ajax_f={BOX.IDBOX}','trai_{BOX.ID_GET_AJAX}');" href="#Reload">{BOX.NAME}</a></li>
+                            <!-- END: tab_box_nho -->
+                        </ul>
+                    </div>
+                    <div class="box_r" id="trai_{BOX.ID_GET_AJAX}">
+                    	<!-- BEGIN: tieu_diem -->
+                    	<div class="tieudiem">
+                        	<div class="title_quote">
+                                <h3><a {TARGET} title="{TIEUDIEM.TITLE_ASCII}" href="{TIEUDIEM.LINK}">{TIEUDIEM.TITLE}</a></h3>
+                                <p>{TIEUDIEM.INTRO}</p>
+                            </div>
+                        
+                            <div class="thumbs">
+                                <a {TARGET} title="{TIEUDIEM.TITLE_ASCII}" href="{TIEUDIEM.LINK}"><img src="{TIEUDIEM.IMG}" class="img_thumbs" border="0" width="110" height="85" /></a>
+                            </div>
+                    </div><!--/.tieudiem-->
+                    <!-- END: tieu_diem -->
+                        <div class="clear"></div>
+                        <div class="listxemthem">
+                        	<ul>
+                            	<!-- BEGIN: list_bai_moi -->
+                            	<li><a title="{LIST.TITLE_FULL}" {TARGET} href="{LIST.LINK}">{LIST.TITLE}</a> <span>({LIST.VIEWS})</span></li>    
+                                <!-- END: list_bai_moi -->
+                            </ul>
+                            <div class="viewbox"><a {TARGET} href="{BOX.LINK}">Xem thêm...!</a></div>
+                        </div><!--/.listxemthem-->
+                   	</div><!--/.box_r-->
+                    <div class="box_f"></div>
+                    <div class="clear"></div>
+                    <!-- END: box_nho -->
+       	</div><!--/#box_left-->
+        <!-- END: box_trai -->
+        
+    	<!-- BEGIN: box_phai -->
+        <div id="box_right">
+        			<!-- BEGIN: box_nho -->
+                     <div class="box_t{TCAT.NAME}">
+                    	<ul>
+                            <!-- BEGIN: tab_box_nho -->
+                          <li><a title="Xem {BOX.NAME}" onclick="ajax_load('?ajax_f={BOX.IDBOX}','phai_{BOX.ID_GET_AJAX}');" href="#Reload">{BOX.NAME}</a></li>
+                            <!-- END: tab_box_nho -->
+                        </ul>
+                    </div>
+                    
+                    <div class="box_r" id="phai_{BOX.ID_GET_AJAX}">
+                    	<!-- BEGIN: tieu_diem -->
+                    	<div class="tieudiem">
+                        	<div class="title_quote">
+                                <h3><a {TARGET} title="{TIEUDIEM.TITLE_ASCII}" href="{TIEUDIEM.LINK}">{TIEUDIEM.TITLE}</a></h3>
+                                <p>{TIEUDIEM.INTRO}</p>
+                            </div>
+                        
+                            <div class="thumbs">
+                                <a {TARGET} title="{TIEUDIEM.TITLE_ASCII}" href="{TIEUDIEM.LINK}"><img src="{TIEUDIEM.IMG}" class="img_thumbs" border="0" width="110" height="85" /></a>
+                            </div>
+                    </div><!--/.tieudiem-->
+                    <!-- END: tieu_diem -->
+                        <div class="clear"></div>
+                        <div class="listxemthem">
+                        	<ul>
+                            	<!-- BEGIN: list_bai_moi -->
+                            	<li><a title="{LIST.TITLE_FULL}" {TARGET} href="{LIST.LINK}">{LIST.TITLE}</a> <span>({LIST.VIEWS})</span></li>    
+                                <!-- END: list_bai_moi -->
+                            </ul>
+                            <div class="viewbox"><a {TARGET} href="{BOX.LINK}">Xem thêm...!</a></div>
+                        </div><!--/.listxemthem-->
+                   	</div><!--/.box_r-->
+                    <div class="box_f"></div>
+                    <div class="clear"></div>
+                    <!-- END: box_nho -->
+       	</div><!--/#box_right-->
+        <!-- END: box_phai -->
+		<div class="clear"></div>
+		
+        
+
+</div><!--/#main_l-->    
+
+
+<div id="main_r">
+
+        <div class="right_top_none"></div>
+        <div class="right_r">{ADS_CODE3}</div>
+        <div class="right_f"></div>
+    	<div class="clear"></div>
+        
+        
+    	<div id="right_tophot"></div>
+ 		<div class="right_r_tophot">
+        	
+            
+        <div class="idTabs">
+<a href="#rightpost_newpost" style="font-size:15px;color:green;font-weight:bold">Bài mới</a> |
+        <a href="#rightpost_tophot" style="font-size:15px;color:pink;font-weight:bold">Top hot</a> | 
+        
+        <a href="#rightpost_randview" style="font-size:15px;color:dodgerblue;font-weight:bold">Ngẫu nhiên</a>		
+        <div class="clear"></div>
+        
+            <div id="rightpost_tophot" class="tabbed-list-1">
+                    <ul>
+                        <!-- BEGIN: link_right -->
+                        <li><a {TARGET} href="{RIGHT.LINK}">{RIGHT.TITLE}</a></li>
+                        <!-- END: link_right -->
+                    </ul>
+            </div>
+        
+        
+            <div id="rightpost_newpost" class="tabbed-list-1" style="display:none;">
+                    <ul>
+                        <!-- BEGIN: newpost -->
+                        <li><a title="Views: {NEWPOST.VIEWS}" {TARGET} href="{NEWPOST.LINK}">{NEWPOST.TITLE}</a></li>
+                        <!-- END: newpost -->
+                    </ul>
+            </div>
+        
+            <div id="rightpost_randview" class="tabbed-list-1" style="display:none;">
+                    <ul>
+                        <!-- BEGIN: randview -->
+                        <li><a title="Views: {RANDVIEW.VIEWS}" {TARGET} href="{RANDVIEW.LINK}">{RANDVIEW.TITLE}</a></li>
+                        <!-- END: randview -->
+                    </ul>
+            </div>
+        
+         </div>
+     	</div>
+        <div class="right_f"></div>
+        <div class="clear"></div>
+        
+        <!-- BEGIN: showpoll -->
+        <div class="right_top_none"></div>       
+        <div class="right_r" id="showpoll">
+        	<h2>{POLL.QUESTION}</h2>
+            <ul>
+            	<!-- BEGIN: poll_row -->
+            	<li>
+                	<div class="title">{POLL.NAME}</div>
+                    <div class="votes">
+                         <div title="{POLL.PERCENT}%" class="pollbar{POLL.CLASS}" style="width: {POLL.PERCENT}%;"></div>
+            		</div>
+                    <div class="numvotes">{POLL.NUMBER}</div>
+                </li>
+                <!-- END: poll_row -->
+
+            </ul>
+        </div> 
+        <div class="right_f"></div>
+    	<div class="clear"></div>
+        <!-- END: showpoll -->
+        
+        
+     	
+        
+        <div class="right_top_none"></div>
+        <div class="right_r">{ADS_CODE4}</div>
+        <div class="right_f"></div>
+    	<div class="clear"></div>
+        
+        <div id="right_thuthuat"></div>
+ 		<div class="right_r">
+        
+<div class="idTabs">
+<a href="#thu-thuat-tin-hoc"style="font-size:15px;color:dodgerblue;font-weight:bold">Tin học</a>	|
+<a href="#thu-thuat-chat" style="font-size:15px;color:pink;font-weight:bold">Thủ thuật Chat</a> | 
+<a href="#thu-thuat-blog" style="font-size:15px;color:green;font-weight:bold">Blog Plus</a> 
+	
+
+
+
+		<div class="clear"></div>
+
+<div id="thu-thuat-chat" class="tabbed-list-1">
+<script type="text/javascript" src="http://thuthuat.chiplove.biz/rss.php?type=js&catid=1,19,18&limit=20"></script>
+<script type="text/javascript">
+for (i = 0; i < posts.length; i++){
+posts[i]['title_tooltip'] = posts[i].title;
+if (posts[i].title.length > 40){
+	 posts[i].title = posts[i].title.substring(0, 40) + '...'; 
+}
+document.write('<a title="' + posts[i]['title_tooltip'] + ' - ' + posts[i]['dateline'] + '" href="' + posts[i]['url'] + '" target="_blank">» ' + posts[i]['title'] + '</a><br>');
+}
+</script>
+<div align="right"><a target="_blank"  href="http://thuthuat.chiplove.biz"><font color="red">Xem thêm...!</font></a></div>
+		</div>
+
+
+
+
+		<div id="thu-thuat-blog" class="tabbed-list-1" style="display:none;">
+<script type="text/javascript" src="http://thuthuat.chiplove.biz/rss.php?type=js&catid=3,4,5,6,39&limit=20"></script>
+<script type="text/javascript">
+for (i = 0; i < posts.length; i++){
+posts[i]['title_tooltip'] = posts[i].title;
+if (posts[i].title.length > 40){
+	 posts[i].title = posts[i].title.substring(0, 40) + '...'; 
+}
+document.write('<a title="' + posts[i]['title_tooltip'] + ' - ' + posts[i]['dateline'] + '" href="' + posts[i]['url'] + '" target="_blank">» ' + posts[i]['title'] + '</a><br>');
+}
+</script>
+<div align="right"><a target="_blank"  href="http://thuthuat.chiplove.biz"><font color="red">Xem thêm...!</font></a></div>
+
+		</div>
+
+
+
+		<div id="thu-thuat-tin-hoc" class="tabbed-list-1" style="display:none;">
+<script type="text/javascript" src="http://thuthuat.chiplove.biz/rss.php?type=js&catid=10,11,12,13,14,29,20&limit=20"></script>
+<script type="text/javascript">
+for (i = 0; i < posts.length; i++){
+posts[i]['title_tooltip'] = posts[i].title;
+if (posts[i].title.length > 40){
+	 posts[i].title = posts[i].title.substring(0, 40) + '...'; 
+}
+document.write('<a title="' + posts[i]['title_tooltip'] + ' - ' + posts[i]['dateline'] + '" href="' + posts[i]['url'] + '" target="_blank">» ' + posts[i]['title'] + '</a><br>');
+}
+</script>
+<div align="right"><a target="_blank"  href="http://thuthuat.chiplove.biz"><font color="red">Xem thêm...!</font></a></div>
+
+</div>
+
+        </div>
+        
+        </div>
+        <div class="right_f"></div>
+        <div class="clear"></div>
+        
+        <div class="right_top_none"></div>
+        <div class="right_r">
+        	
+            
+
+        </div>
+        <div class="right_f"></div>
+    	<div class="clear"></div>
+        
+        
+        <div id="right_music"></div>
+ 		<div class="right_r">
+       <object width="280" height="400">  <param name="movie" value="http://www.nhaccuatui.com/l/HwXFXa6XdJa8" />  <param name="quality" value="high" />  <param name="wmode" value="transparent" />  <param name="allowscriptaccess" value="always" />  <param name="flashvars" value="&autostart=false" />  <embed src="http://www.nhaccuatui.com/l/HwXFXa6XdJa8" flashvars="target=blank&autostart=false" allowscriptaccess="always" quality="high" wmode="transparent" type="application/x-shockwave-flash" width="280" height="400"></embed></object>
+
+        
+        </div>
+        <div class="right_f"></div>
+        <div class="clear"></div>
+        
+<div id="right_tt"></div>
+ 		<div class="right_r">
+       
+
+<p><center><strong>Hỗ trợ kỹ thuật</strong></center></p><br />
+<center><a href="ymsgr:sendim?nguyencuonqt" border="1" style="text-decoration:none"><img src="http://opi.yahoo.com/online?u=nguyencuonqt&amp;m=g&amp;t=14" height="100" ></a>
+</center>
+                </div>
+		<div class="right_top_none"></div>
+        <div class="right_r">{ADS_CODE5}</div>
+        <div class="right_f"></div>
+    	<div class="clear"></div>
+</div><!--/#main_r--> 
+
+<div class="clear"></div>
+
+<div id="footer">
+
+	<div id="site_info">
+    	<b>Dongnai24h.vn</b>:<br>
+    Kênh thông tin giải trí,diễn đàn Teen Vn<br>
+    Phone: 0984.684.xxx<br>
+    Y!m: nguyencuonqt <br>
+    Email: <br>
+
+    </div>
+    
+    <div id="copyright">
+    {VBHOME_VERSION}<Br />
+    Powered by Dongnai24h.vn<br />
+    Copyright 2012 Dongnai24h.vn
+    </div>
+
+</div><!--/#footer--> 
+
+
+</div><!--/#wrapper-->
+
+</body>
+</html>
+<!-- END: main -->

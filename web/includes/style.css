@@ -1,0 +1,94 @@
+@charset "utf-8";
+/* CSS Document */
+
+* {margin: 0; padding: 0} 
+body {
+        text-align:center;
+		background:fixed;
+		background-image:url(../images/bg.jpg);
+}
+
+a:link     {
+	color:green;
+	font-size=12pt;
+	text-decoration:none
+}
+a:visited  {
+	color:black;
+	font-size=12pt;
+	text-decoration:none
+}
+a:hover    {
+	color:red;
+	font-size=12pt;
+	font-weight:bold
+}
+a:active   {
+	color:yellow;
+	font-size=12pt;
+	text-decoration:none
+}
+
+#wrapper {
+    margin:auto;
+    width:800px;
+	background-color:#FFFFFF;
+}
+ 
+#header {
+    height:100px;
+}
+ 
+#footer {
+    height:70px;
+    background:#339933;
+}
+ 
+#body_left {
+    float:left;
+    width:150px;
+    background:#FF9900;
+	padding-top:0px;
+}
+ 
+#body_main {
+	margin:0px;
+    float:left;
+    width:650px;
+    background:#FFFFFF;
+}
+ 
+.vide {
+    clear:both;
+}
+
+/* dinh dang form */
+
+.left_text{
+	width:100px;
+	float:left;
+}
+.right_form{
+	width:400px;
+	float:left;
+}
+.color{
+	width:15px;
+	height:15px;
+	float:left;
+}
+.full_width{
+	width:100%;
+	float:left;
+}
+#form_wrapper{
+	float:left;
+	width:500px;
+	padding-left:50px;
+	padding-top:30px;
+}
+#color_selected{
+	float:left;
+	width:290px;
+}
+

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<navgroups product="vbulletin">
+
+	<navgroup phrase="hqth_music" permissions="" displayorder="24">
+
+		<navoption displayorder="10">
+			<phrase>Music_Gift</phrase>
+			<link>hqth_music.php?do=setting</link>
+		</navoption>			
+
+	</navgroup>
+
+</navgroups>
